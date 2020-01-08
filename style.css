@@ -1,0 +1,323 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fafcff;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* start main css*/
+.main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+ z-index: 0;
+
+  
+}
+
+.main {
+}
+
+.bubble {
+  background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+   z-index: 0;
+}
+.bubble-1 {
+  opacity: 0.51;
+  left: 49vw;
+   z-index: 0;
+    top: 80vh;
+  animation: move-1 30.02s infinite;
+  -moz-transform: translate(0, 0) scale(0.17);
+  -ms-transform: translate(0, 0) scale(0.17);
+  -webkit-transform: translate(0, 0) scale(0.17);
+  transform: translate(0, 0) scale(1.17);
+}
+.bubble-2 {
+  opacity: 0.50;
+      left: 75vw;
+    top: 78vh;
+     z-index: 0;
+  animation: move-2 30.04s infinite;
+  -moz-transform: translate(0, 0) scale(1.32);
+  -ms-transform: translate(0, 0) scale(1.32);
+  -webkit-transform: translate(0, 0) scale(1.32);
+  transform: translate(0, 0) scale(1.32);
+}
+.bubble-3 {
+  opacity: 0.27;
+  left: 49vw;
+  top: 130vh;
+  animation: move-3 30.06s infinite;
+  -moz-transform: translate(0, 0) scale(1.28);
+  -ms-transform: translate(0, 0) scale(1.28);
+  -webkit-transform: translate(0, 0) scale(1.28);
+  transform: translate(0, 0) scale(1.28);
+}
+.bubble-4 {
+  opacity: 0.80;
+  left: 65vw;
+  top: 155vh;
+  z-index: 0;
+  animation: move-4 30.08s infinite;
+  -moz-transform: translate(0, 0) scale(1.51);
+  -ms-transform: translate(0, 0) scale(1.51);
+  -webkit-transform: translate(0, 0) scale(1.51);
+  transform: translate(0, 0) scale(0.91);
+}
+.bubble-5 {
+  opacity: 0.72;
+  left: 86vw;
+  top: 38vh;
+  animation: move-5 30.1s infinite;
+  -moz-transform: translate(0, 0) scale(1.16);
+  -ms-transform: translate(0, 0) scale(1.16);
+  -webkit-transform: translate(0, 0) scale(1.16);
+  transform: translate(0, 0) scale(1.16);
+}
+.bubble-6 {
+  opacity: 0.37;
+  left: 59vw;
+  top: 14vh;
+  animation: move-6 30.12s infinite;
+  -moz-transform: translate(0, 0) scale(1.15);
+  -ms-transform: translate(0, 0) scale(1.15);
+  -webkit-transform: translate(0, 0) scale(1.15);
+  transform: translate(0, 0) scale(1.15);
+}
+
+/* end  main css*/
+/* start header css*/
+header {
+  
+  position: relative;
+  height: 420px;
+  padding-left: 4%;
+  margin-top: -3px;
+  background-image: url("szUXL.png");
+  background-repeat: repeat-y;
+}
+.section2
+{
+
+ margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.section2 h1
+{
+  padding: 25px 25px 5px 25px;
+    margin: 30px 30px 5px 30px;
+}
+.section2 span
+{
+  padding-left: 25px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+button
+{
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border:none;
+    border-radius: 5px;
+} 
+nav {
+  
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  }
+  a {
+    color: #001e4a;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 0.91em;
+    font-family: sans-serif;
+    text-align: right;
+     font-weight: bold;
+  }
+
+.loginbtn
+{
+  background-color: #00a1ff1c;
+  padding-left: 5px !important;
+    padding: 5px;
+    color: #0000ffe8 !important;
+    font-weight: bold !important;
+
+}
+/* end header css*/
+.section4
+{
+    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+}
+.vedioarea
+{
+
+  margin: 40px;
+  padding: 30px;
+  width: 70%;
+  height: 180px;
+  background-color: white;
+   box-shadow: 
+      inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+}
+.helpsection
+{
+  padding: 8%;
+  padding-top: 0%;
+}
+.helpsection h2
+{
+  text-align: center;
+}
+
+.shadowbox
+{
+  background-image: url("downloadtest.png");
+  background-repeat: repeat-y;
+  width: 80%;
+  margin: 20px;
+  height:293px;
+  background-color: white;
+   box-shadow: 
+      inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.smallbox
+{
+
+  
+ width: 66%;
+    margin: 20px;
+    height: 141px;
+  background-color: white;
+   box-shadow: 
+      inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+padding: 20px;
+}
+.smallbox span {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.smallbox i
+{
+
+  float: right;
+}
+.smallbox .price
+{
+   font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.smallbox .tag
+{
+  color: green;
+ padding-top: 20px;
+}
+.smallbox .tag i
+{
+  float: left !important;
+}
+.includesection
+{
+   padding: 8%;
+   padding-top: 0%;
+}
+.includesection h2
+{
+  text-align: center;
+}
+.startnow
+{
+  padding: 8%;
+  padding-top: 0%;
+  text-align: center;
+}
+.runbox1
+{
+ 
+  width: 90%;
+  
+    margin: 20px;
+    height: 280px;
+    box-shadow: 
+      inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+background-image: url("placeholder.jpg");
+
+}
+.runbox2 button
+{
+   background: linear-gradient(315deg, #20bf55 0%, #01baef 74%); /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+box-shadow: 
+      inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+
+}
+.runbox2
+{
+  padding: 20px;
+  width: 80%;
+  color: #09001312 !important;
+    margin: 20px;
+    text-align: center;
+    height: 300px;
+    padding-top: 25%;
+background-color: white;
+box-shadow: 
+      inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+}
+h5
+{
+  padding-left: 3px;
+  font-weight: normal;
+}
