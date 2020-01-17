@@ -1,3 +1,4 @@
+
 html,
 body {
   height: 100%;
@@ -7,9 +8,8 @@ body {
   position: relative;
   margin: 0;
   font-family: sans-serif;
-  background-color: #fafcff;
-font-family: Arial, Helvetica, sans-serif;
-
+  background-color: #dceaffa3;
+font-family: "Dosis", sans-serif;
 }
 
 * {
@@ -161,7 +161,7 @@ nav {
   grid-gap: 10px;
   }
   a {
-    color: #001e4a;
+    color: #12619e;
     text-decoration: none;
     padding: 25px;
     font-size: 0.91em;
