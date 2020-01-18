@@ -48,26 +48,26 @@ h1, h2, h3, h4, h5, h6{
   z-index: 0;
 }
 .bubble-1 {
-  opacity: 0.51;
-  left: 49vw;
-  z-index: 0;
-  top: 80vh;
-  animation: move-1 30.02s infinite;
-  -moz-transform: translate(0, 0) scale(0.17);
-  -ms-transform: translate(0, 0) scale(0.17);
-  -webkit-transform: translate(0, 0) scale(0.17);
-  transform: translate(0, 0) scale(1.17);
+    opacity: 0.51;
+    left: 37%;
+    z-index: 0;
+    top: 24%;
+    animation: move-1 30.02s infinite;
+    -moz-transform: translate(0, 0) scale(0.17);
+    -ms-transform: translate(0, 0) scale(0.17);
+    -webkit-transform: translate(0, 0) scale(0.17);
+    transform: translate(0, 0) scale(1.7);
 }
 .bubble-2 {
-  opacity: 0.50;
-  left: 75vw;
-  top: 78vh;
-  z-index: 0;
-  animation: move-2 30.04s infinite;
-  -moz-transform: translate(0, 0) scale(1.32);
-  -ms-transform: translate(0, 0) scale(1.32);
-  -webkit-transform: translate(0, 0) scale(1.32);
-  transform: translate(0, 0) scale(1.32);
+    opacity: 0.70;
+    right: 17%;
+    bottom: 1%;
+    z-index: 0;
+    animation: move-2 30.04s infinite;
+    -moz-transform: translate(0, 0) scale(1.32);
+    -ms-transform: translate(0, 0) scale(1.32);
+    -webkit-transform: translate(0, 0) scale(1.32);
+    transform: translate(0, 0) scale(2.5);
 }
 .bubble-3 {
   opacity: 0.65;
@@ -120,10 +120,10 @@ h1, h2, h3, h4, h5, h6{
 header {
   position: relative;
   margin-top: 0px;
-  background-image: url(szUXL.png);
+/*  background-image: url(szUXL.png);
   background-repeat: no-repeat;
   background-size: 52% 100%;
-  background-position-y: -9px;
+  background-position-y: -9px;*/
 }
 .section2
 {
@@ -338,7 +338,7 @@ nav a {
   color: #092b4a;
   font-size: 32px;
   margin-top: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 .startnow h1 {
   color: #092b4a;
@@ -358,11 +358,13 @@ nav a {
   margin-top: 8px;
   margin-bottom: 0;
 }
-.section4-text h5{
-  font-family: roboto;
-  margin: 13px 0;
-  color: #698195;
-  line-height: 16px;
+.section4-text h5 {
+    font-family: roboto;
+    margin: 5px 0;
+    color: #698195;
+    line-height: 26px;
+    text-transform: capitalize;
+    margin-left: 20px;
 }
 .startnow
 {
@@ -455,6 +457,54 @@ h5
   color: #092b4a;
 }
 
+
+#wave {
+position: absolute;
+    height: 70px;
+    width: 600px;
+    background: #ffffff;
+    top: 265px;
+    transform: scaleX(13) scaleY(2.5) rotate(-90deg);
+    left: -440px;
+    z-index: -1;
+}
+
+#wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+    width: 340px;
+    height: 80px;
+    background-color: #ffffff;
+    right: 0px;
+    top: 22px;
+
+}
+
+#wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+    width: 380px;
+    height: 70px;
+    background-color: #f7fafd;
+    left: -87px;
+    top: 40px;
+}
+
+.grow-section{
+  position: relative;
+}
+
+.bottom-icon1 {
+    color: #85c5b3;
+    float: left;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -540,6 +590,10 @@ h5
     margin-left: 5%;
     margin-right: 5%;
   }
+  #wave {
+    transform: scaleX(4) scaleY(1) rotate(-90deg);
+    left: -265px;
+}
 }
 
 @media screen and (max-width:575px){
@@ -567,7 +621,7 @@ h5
   nav a {
     padding: 0px 1px;
   }
-  .bubble-6 {
+  .bubble-6, .bubble-2 {
     display: none;
   }
   .smallbox {
