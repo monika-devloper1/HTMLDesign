@@ -7,6 +7,7 @@ body {
 }
 
 body {
+      overflow-x: hidden;
   position: relative;
   margin: 0;
   font-family: Roboto;
@@ -112,7 +113,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .header-logo{
   width: 150px;
-  margin-top: -15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* end  main css*/
@@ -382,6 +384,7 @@ nav a {
   line-height: 30px;
   margin-top: 8px;
   margin-bottom: 15px;
+      min-height: 60px;
 }
 .section4-text h5 {
     font-family: roboto;
@@ -482,40 +485,50 @@ h5
   color: #092b4a;
 }
 
+.wave {
+    transform: scaleY(0.5) rotate(65deg);
+    position: relative;
+    z-index: -1;
+}
+
+
 
 #wave {
-position: absolute;
+    position: absolute;
     height: 70px;
     width: 600px;
     background: #ffffff;
-    top: 325px;
-    transform: scaleX(14) scaleY(2.5) rotate(-90deg);
-    left: -440px;
+    top: 126px;
+    transform: scaleX(14) scaleY(4) rotate(-90deg);
+    left: 301px;
     z-index: -1;
 }
 
 #wave:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 84% 93%;
-    width: 343px;
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 340px;
     height: 80px;
-    background-color: #ffffff;
-    right: 0px;
-    top: 22px;
-}
-#wave:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 28% 100%;
-    width: 380px;
-    height: 70px;
     background-color: #f7fafd;
-    left: -87px;
+    right: -5px;
     top: 40px;
 }
+
+#wave:after {
+content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 300px;
+    height: 70px;
+    background-color: #ffffff;
+    left: 0;
+    top: 30px;
+}
+
+
 
 .bottom-points svg {
     height: 16px;
@@ -576,6 +589,49 @@ position: absolute;
   }
 }
 
+@media (min-width: 1400px){
+  .wave {
+    transform: initial;
+    position: relative;
+    z-index: -1;
+}
+  #wave {
+position: absolute;
+    height: 70px;
+    width: 600px;
+    background: #ffffff;
+    top: 325px;
+    transform: scaleX(14) scaleY(2.5) rotate(-90deg);
+    left: -440px;
+    z-index: -1;
+}
+
+#wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+    width: 340px;
+    height: 80px;
+    background-color: #ffffff;
+    right: 0px;
+    top: 22px;
+
+}
+
+#wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+    width: 380px;
+    height: 70px;
+    background-color: #f7fafd;
+    left: -87px;
+    top: 40px;
+}
+}
+
 @media screen and (max-width:1199px){
   .section4 {
     grid-template-columns: repeat(3, 1fr);
@@ -584,7 +640,46 @@ position: absolute;
   .section2 {
     grid-template-columns: repeat(2, 1fr);
   }
+ .wave {
+    transform: initial;
+    position: relative;
+    z-index: -1;
 }
+  #wave {
+position: absolute;
+    height: 70px;
+    width: 600px;
+    background: #ffffff;
+    top: 325px;
+    transform: scaleX(14) scaleY(2.5) rotate(-90deg);
+    left: -440px;
+    z-index: -1;
+}
+
+#wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+    width: 340px;
+    height: 80px;
+    background-color: #ffffff;
+    right: 0px;
+    top: 22px;
+
+}
+
+#wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+    width: 380px;
+    height: 70px;
+    background-color: #f7fafd;
+    left: -87px;
+    top: 40px;
+}}
 
 @media screen and (max-width:991px){
   .section4 {
@@ -635,7 +730,6 @@ position: absolute;
   #wave {
     transform: scaleX(4) scaleY(1) rotate(-90deg);
     left: -265px;
-    	display: none;
 }
 }
 
@@ -672,14 +766,13 @@ position: absolute;
     margin: 20px !important;
     padding: 20px !important;
   }
-  #wave
-  {
-  	display: none;
-  }
 header {
     background-size: 86% 100%;
 }
 nav {
     float: none;
+}
+.wave{
+  display: none;
 }
 }
