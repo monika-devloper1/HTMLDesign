@@ -498,20 +498,18 @@ position: absolute;
     content: "";
     display: block;
     position: absolute;
-    border-radius: 50% 100%;
-    width: 340px;
+    border-radius: 84% 93%;
+    width: 343px;
     height: 80px;
     background-color: #ffffff;
     right: 0px;
     top: 22px;
-
 }
-
 #wave:after {
     content: "";
     display: block;
     position: absolute;
-    border-radius: 50% 100%;
+    border-radius: 28% 100%;
     width: 380px;
     height: 70px;
     background-color: #f7fafd;
