@@ -637,6 +637,7 @@ position: absolute;
   #wave {
     transform: scaleX(4) scaleY(1) rotate(-90deg);
     left: -265px;
+    	display: none;
 }
 }
 
@@ -672,6 +673,10 @@ position: absolute;
     width: auto;
     margin: 20px !important;
     padding: 20px !important;
+  }
+  #wave
+  {
+  	display: none;
   }
 header {
     background-size: 86% 100%;
