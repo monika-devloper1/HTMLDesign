@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .bubble-2 {
     opacity: 0.70;
-    right: 17%;
+    right: 2%;
     bottom: 1%;
     z-index: 0;
     animation: move-2 30.04s infinite;
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .bubble-5 {
   opacity: 0.51;
-  left: 17%;
+  left: 21%;
   top: 0;
   animation: move-5 30.1s infinite;
   -moz-transform: translate(0, 0) scale(1.16);
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6{
 .bubble-6 {
   opacity: 0.37;
   right: 0%;
-  bottom: 33%;
+  bottom: 25%;
   animation: move-6 30.12s infinite;
   -moz-transform: translate(0, 0) scale(1.15);
   -ms-transform: translate(0, 0) scale(1.15);
@@ -133,7 +133,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
 
 }
-
 .section5{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -148,7 +147,7 @@ header {
 
 .banner-text{
   margin-bottom: 50;
-  margin-top: 50px;
+  margin-top: 70px;
   display: inline-block;
 }
 .section2 h1
@@ -170,15 +169,16 @@ header {
 }
 
 .banner-label{
-  display: inline-block;
-  margin-left: 10px;
-  font-size: 14px;
-  font-style: italic;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+    font-family: roboto slam;
 }
 
 button
 {
-  padding: 10px 35px;
+  padding: 10px 30px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
@@ -221,6 +221,7 @@ nav a {
 }
 .video-section{
   position: relative;
+  margin-top: 60px;
 }
 
 .videoarea {
@@ -259,7 +260,7 @@ nav a {
 }
 .smallbox
 {
-  width: 70%;
+  width: 100%;
   margin: 20px;
   background-color: white;
   box-shadow: 0px 0px 35px #00000014;
@@ -283,7 +284,7 @@ nav a {
 }
 .smallbox-icon{
   float: right;
-  padding: 8px 10px;
+  padding: 10px;
   border-radius: 50%;
 }
 .icon-blue{
@@ -301,24 +302,48 @@ nav a {
 .icon-pink{
   background: #f5e9f3;
 }
-.icon-blue i{
-  color: #6fa5e3;
+.icon-blue path {
+    fill: #6fa5e3;
+}
+.icon-green path{
+  fill: #6ae2b1;
+}
+.icon-red path{
+  fill: #da4b62;
+}
+.icon-yellow path{
+  fill: #da9d49;
+}
+.icon-pink path{
+  fill: #d870bc;
+}
+.icon-blue i {
+    fill: #6fa5e3;
 }
 .icon-green i{
-  color: #6ae2b1;
+  fill: #6ae2b1;
 }
 .icon-red i{
-  color: #da4b62;
+  fill: #da4b62;
 }
 .icon-yellow i{
-  color: #da9d49;
+  fill: #da9d49;
 }
 .icon-pink i{
-  color: #d870bc;
+  fill: #d870bc;
+}
+.smallbox-icon svg{
+  width: 18px;
+  height: 18px;
+}
+
+.bottom-icon svg {
+    width: 18px;
+    height: 18px;
 }
 
 .section4-text{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .smallbox .tag
@@ -329,8 +354,8 @@ nav a {
 }
 .includesection
 {
- padding: 8%;
- padding-top: 0%;
+/* padding: 8%;
+ padding-top: 0%;*/
 }
 .includesection h2
 {
@@ -356,7 +381,7 @@ nav a {
   text-transform: capitalize;
   line-height: 30px;
   margin-top: 8px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 .section4-text h5 {
     font-family: roboto;
@@ -427,7 +452,7 @@ h3.placeholder-title {
   margin-right: 32%;
 }
 .run-text {
-  margin-right: 34%;
+  /*margin-right: 34%;*/
 }
 .grow-text{
   margin-right: 34%;
@@ -463,8 +488,8 @@ position: absolute;
     height: 70px;
     width: 600px;
     background: #ffffff;
-    top: 265px;
-    transform: scaleX(13) scaleY(2.5) rotate(-90deg);
+    top: 325px;
+    transform: scaleX(14) scaleY(2.5) rotate(-90deg);
     left: -440px;
     z-index: -1;
 }
@@ -494,6 +519,18 @@ position: absolute;
     top: 40px;
 }
 
+.bottom-points svg {
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.bottom-points path {
+    fill: #67a593;
+}
+
 .grow-section{
   position: relative;
 }
@@ -511,6 +548,10 @@ position: absolute;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.run-main{
+      margin-left: 34%;
 }
 
 @media (min-width: 576px) {
@@ -580,6 +621,9 @@ position: absolute;
   .loginbtn {
     padding: 3px;
   }
+  .run-main {
+    margin-left: 0%;
+}
 }
 
 @media screen and (max-width:767px){
