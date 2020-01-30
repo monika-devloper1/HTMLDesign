@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 html,
 body {
+  -webkit-font-smoothing: antialiased;
   height: 100%;
 }
 
@@ -47,6 +46,7 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 50%;
   position: absolute;
   z-index: 0;
+
 }
 .bubble-1 {
     opacity: 0.51;
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6{
     -ms-transform: translate(0, 0) scale(0.17);
     -webkit-transform: translate(0, 0) scale(0.17);
     transform: translate(0, 0) scale(1.7);
+   
 }
 .bubble-2 {
     opacity: 0.70;
@@ -135,6 +136,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
 
 }
+
 .section5{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -143,6 +145,9 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.section6 a:hover{
+ color:  #2081d5 !important;
+} 
 .my-container{
 
 }
@@ -206,9 +211,13 @@ nav a {
   line-height: 30px;
   text-align: center;
 }
-.loginbtn {
+.navbtn
+{
+  padding: 9px;
+}
+.active,.navbtn:hover {
   background-color: #e7f0f9;
-  padding: 7px;
+  
   color: #2081d5 !important;
   font-weight: bold !important;
   border-radius: 5px !important;
@@ -226,11 +235,16 @@ nav a {
   margin-top: 60px;
 }
 
-.videoarea {
+.videoarea ,iframe{
   height: 220px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0px 0px 35px #00000014;
+
+}
+iframe{
+  border: none !important;
+  width: 100%;
 }
 .helpsection
 {
@@ -270,6 +284,10 @@ nav a {
   border-radius: 6px;
   height: 150px;
 }
+.smallbox:hover {
+   
+     transform: scale(1.1) !important;  
+  }
 .smallbox span {
   display: inline-block;
   margin-top: 7px;
@@ -337,11 +355,19 @@ nav a {
 .smallbox-icon svg{
   width: 18px;
   height: 18px;
+
+    animation-name: icon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .bottom-icon svg {
     width: 18px;
     height: 18px;
+
+    animation-name: icon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .section4-text{
@@ -424,6 +450,10 @@ nav a {
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0px 0px 25px #0000002e;
+
+    animation-name: icon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .runbox2
@@ -471,7 +501,6 @@ h3.placeholder-title {
   border-radius: 50%;
 }
 
-
 h5
 {
   padding-left: 3px;
@@ -492,7 +521,13 @@ h5
 }
 
 
+button:hover
+{
+  -webkit-transform:translate3d(0,-2px,0);
+  transform:translate3d(0,-2px,0);
+  box-shadow:0 1px 4px 0 rgba(0,0,0,.14);
 
+}
 #wave {
     position: absolute;
     height: 70px;
@@ -766,6 +801,13 @@ position: absolute;
     margin: 20px !important;
     padding: 20px !important;
   }
+  .smallbox:hover {
+    width: auto;
+    margin: 20px !important;
+    padding: 20px !important;
+     transform: scale(1.5) !important;  
+  }
+  
 header {
     background-size: 86% 100%;
 }
@@ -775,4 +817,50 @@ nav {
 .wave{
   display: none;
 }
+
+
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes icon {
+  0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+/* Standard syntax */
+@keyframes icon {
+  0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.zoom
+{
+    animation-name: icon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.bottomzoom
+{
+   animation-name: icon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
